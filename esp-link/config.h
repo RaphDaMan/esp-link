@@ -25,7 +25,7 @@ typedef struct {
            mqtt_clientid[48],
            mqtt_old_username[32],
            mqtt_old_password[32],      // replaced by 70-char mqtt_password below
-           mqtt_status_topic[32];
+           mqtt_status_topic[256];
   char     sys_descr[129];             // system description
   int8_t   rx_pullup;                  // internal pull-up on RX pin
   char     sntp_server[32];
